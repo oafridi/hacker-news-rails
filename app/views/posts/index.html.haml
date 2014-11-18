@@ -1,0 +1,7 @@
+%h1 Hacker news
+
+%p= link_to "New post", new_post_url
+
+%ol
+  - @posts.each do |post|
+    %li= render 'post', post: post

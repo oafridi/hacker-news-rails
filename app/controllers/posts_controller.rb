@@ -8,7 +8,6 @@ class PostsController < ApplicationController
   end
 
   def create
-    p "CREATING!!!"
     @post = Post.new(post_params)
     if @post.save
       redirect_to posts_path
